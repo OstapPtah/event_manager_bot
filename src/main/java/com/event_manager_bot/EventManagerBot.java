@@ -8,15 +8,27 @@ import org.apache.log4j.Logger;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.send.SendSticker;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedDeque;
+
+//Основной класс Bot будет работать в основном потоке приложения и будет занят только тем, что все полученные сообщения
+//будет складывать в специальную очередь и так же будет контейнером для сообщений, которые мы планируем отправить
+//пользователю в ответ.
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 public class EventManagerBot extends TelegramLongPollingBot {
+
+    public final Queue<Object> sendQueue = new ConcurrentLinkedDeque<>();
+    public final Queue<Object>receivedQueue = new ConcurrentLinkedDeque<>();
+
+
     private static final Logger log = Logger.getLogger(EventManagerBot.class);
     final int RECONNECT_PAUSE = 10000;
 
@@ -27,20 +39,22 @@ public class EventManagerBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         log.debug("получено новое обновление! ID-обновления:" + update.getUpdateId());
+        receivedQueue.add(update);
 
-        Long chat_id = update.getMessage().getChatId();
-        String inputText = update.getMessage().getText();
 
-        if (inputText.startsWith("/start")){
-            SendMessage message = new SendMessage();
-            message.setChatId(chat_id);
-            message.setText("Привет, это стартовое сообщение!!! это есть начало");
-            try {
-                execute(message);
-            }catch (TelegramApiException e){
-                e.printStackTrace();
-            }
-        }
+//        Long chat_id = update.getMessage().getChatId();
+//        String inputText = update.getMessage().getText();
+//
+//        if (inputText.startsWith("/start")){
+//            SendMessage message = new SendMessage();
+//            message.setChatId(chat_id);
+//            message.setText("Привет, это стартовое сообщение!!! это есть начало");
+//            try {
+//                execute(message);
+//            }catch (TelegramApiException e){
+//                e.printStackTrace();
+//            }
+//        }
 
     }
 
@@ -70,6 +84,10 @@ public class EventManagerBot extends TelegramLongPollingBot {
             }
             botConnect();
         }
+
+    }
+
+    public void sendSticker(SendSticker sendSticker) {
 
     }
 }

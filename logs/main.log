@@ -4,3 +4,61 @@
 2020-06-19 19:59:58,011[INFO ][main            ][vent_manager_bot.EventManagerBot] - TelegramApi стартовало. Смотри за меседжами
 2020-06-19 20:00:14,359[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417745
 2020-06-19 20:00:41,902[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417746
+2020-06-19 20:18:13,527[INFO ][main            ][vent_manager_bot.EventManagerBot] - TelegramApi стартовало. Смотри за меседжами
+2020-06-19 20:18:14,153[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417747
+2020-06-19 20:18:19,292[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417748
+2020-06-19 20:18:25,087[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417749
+2020-06-19 20:35:53,542[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417750
+2020-06-22 10:07:32,351[INFO ][main            ][vent_manager_bot.EventManagerBot] - TelegramApi стартовало. Смотри за меседжами
+2020-06-22 10:07:32,353[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - [STARTED] MsgReciever.  Bot class: com.event_manager_bot.EventManagerBot@60c98536
+2020-06-22 10:07:32,929[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417752
+2020-06-22 10:07:33,367[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[START] is: com.event_manager_bot.handlers.SystemHandler@2f336d64
+2020-06-22 10:08:00,912[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417753
+2020-06-22 10:08:01,377[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[NONE] not Set. Return DefaultHandler
+2020-06-22 10:08:07,788[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417754
+2020-06-22 10:08:08,380[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[START] is: com.event_manager_bot.handlers.SystemHandler@7bf0887c
+2020-06-22 10:08:16,671[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417755
+2020-06-22 10:08:32,436[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417756
+2020-06-22 10:08:43,298[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417757
+2020-06-22 10:13:40,245[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417758
+2020-06-22 10:43:44,812[INFO ][main            ][vent_manager_bot.EventManagerBot] - TelegramApi стартовало. Смотри за меседжами
+2020-06-22 10:43:44,813[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - [STARTED] MsgReciever.  Bot class: com.event_manager_bot.EventManagerBot@7f731999
+2020-06-22 10:45:30,229[INFO ][main            ][vent_manager_bot.EventManagerBot] - TelegramApi стартовало. Смотри за меседжами
+2020-06-22 10:45:30,230[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - [STARTED] MsgReciever.  Bot class: com.event_manager_bot.EventManagerBot@58c66e28
+2020-06-22 10:45:30,230[INFO ][MesgSender      ][anager_bot.service.MessageSender] - [STARTED] MessageSender. EVentManagerBot class:com.event_manager_bot.EventManagerBot@58c66e28
+2020-06-22 10:45:31,631[ERROR][MesgSender      ][anager_bot.service.MessageSender] - Error sending message
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error sending message: [400] Bad Request: chat not found
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:180)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:24)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:756)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:56)
+	at com.event_manager_bot.service.MessageSender.send(MessageSender.java:52)
+	at com.event_manager_bot.service.MessageSender.run(MessageSender.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-22 10:48:21,726[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417759
+2020-06-22 10:48:22,318[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[START] is: com.event_manager_bot.handlers.SystemHandler@173c917b
+2020-06-22 10:49:54,391[INFO ][main            ][vent_manager_bot.EventManagerBot] - TelegramApi стартовало. Смотри за меседжами
+2020-06-22 10:49:54,392[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - [STARTED] MsgReciever.  Bot class: com.event_manager_bot.EventManagerBot@6c70a851
+2020-06-22 10:49:54,393[INFO ][MesgSender      ][anager_bot.service.MessageSender] - [STARTED] MessageSender. EVentManagerBot class:com.event_manager_bot.EventManagerBot@6c70a851
+2020-06-22 10:49:55,659[ERROR][MesgSender      ][anager_bot.service.MessageSender] - Error sending message
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error sending message: [400] Bad Request: chat not found
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:180)
+	at org.telegram.telegrambots.meta.api.methods.send.SendMessage.deserializeResponse(SendMessage.java:24)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendApiMethod(DefaultAbsSender.java:756)
+	at org.telegram.telegrambots.meta.bots.AbsSender.execute(AbsSender.java:56)
+	at com.event_manager_bot.service.MessageSender.send(MessageSender.java:52)
+	at com.event_manager_bot.service.MessageSender.run(MessageSender.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-22 10:49:58,136[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417760
+2020-06-22 10:49:58,399[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[START] is: com.event_manager_bot.handlers.SystemHandler@238a5194
+2020-06-22 10:50:02,516[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417761
+2020-06-22 10:50:03,403[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[HELP] is: com.event_manager_bot.handlers.SystemHandler@4a515794
+2020-06-22 10:50:21,714[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417762
+2020-06-22 10:50:22,408[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[NOTIFY] is: com.event_manager_bot.handlers.NotifyHandler@12631752
+2020-06-22 10:50:41,526[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417763
+2020-06-22 10:50:42,412[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[NOTIFY] is: com.event_manager_bot.handlers.NotifyHandler@32524ff4
+2020-06-22 10:50:42,414[INFO ][Thread-170      ][event_manager_bot.ability.Notify] - RUN. Notify(eventManagerBot=com.event_manager_bot.EventManagerBot@6c70a851, delayInMillisec=30000, chatID=542946392)
+2020-06-22 10:50:59,425[DEBUG][elegram Executor][vent_manager_bot.EventManagerBot] - получено новое обновление! ID-обновления:79417764
+2020-06-22 10:51:00,416[INFO ][MesgReceiver    ][ager_bot.service.MessageReceiver] - Handler for command[ID] is: com.event_manager_bot.handlers.SystemHandler@43a5aedb
+2020-06-22 10:51:12,418[INFO ][Thread-170      ][event_manager_bot.ability.Notify] - FIHISH. Notify(eventManagerBot=com.event_manager_bot.EventManagerBot@6c70a851, delayInMillisec=30000, chatID=542946392)
+2020-06-22 10:51:12,541[WARN ][MesgSender      ][anager_bot.service.MessageSender] - Can`t detect type of object .SendSticker{chatId='542946392', sticker=org.telegram.telegrambots.meta.api.objects.InputFile@5d196bd9, disableNotification=null, replyToMessageId=null, replyMarkup=null}
